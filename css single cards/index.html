@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Single Cards</title>
+        <link rel="icon" type="image/png" href="D:\html\CSS cards\css single cards\image.jpg">
+       <meta name="viewport" content="width=device-width" initial-scale= "1.0">
+       <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e959e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:100px;
+        }
+        .card {
+            background-color: #fdcdff;
+            border: 2px solid #922b6c;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(98, 95, 95, 0.1);
+            width: 300px;
+            padding: 20px;
+            margin-top: 43%;
+            
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .card-content {
+            margin-top: 15px;
+        }
+        .card-content h2 {
+            font-size: 1.5em;
+            margin: 0;
+        }
+        .card-content p {
+            color: #555555;
+        }
+        .form-card {
+            margin-top: 15px;
+        }
+        .form-card label {
+            margin-right: 5px;
+        }
+        .form-card button {
+            background-color: #9b3b79;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin-right:40px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-card button:hover {
+            background-color: #a75799;
+        }
+        .star-rating {
+            margin-top: 10px;
+        }
+        .star-rating label {
+            color: #ffcc00;
+            font-size: 1.2em;
+            margin-right: 2px;
+        }
+        
+
+       </style>
+    </head>
+    <body>
+        <div class="card">
+            <div class="card-content">
+                <img src="D:\html\CSS cards\css single cards\tshirt.png">
+                <form>
+                    <h2>Adidas Originals    $29.99</h2>
+                    <p>Classic T-shirt for everyday wear</p>
+                     <div class="star-rating">
+                        <label style="color:black">Rating:</label>
+                        <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+                        <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+                        <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+                        <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+                        <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+                     </div>
+                    <div class="form-card">
+                        <label for="quantity" >Quantity</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+                    </div>
+                    <div class="form-card">
+                        <label for="size" >Size</label>
+                        <input type="radio" id="Xs" name="size" value="xs">
+                        <label for="Xs">XS</label>
+                        <input type="radio" id="S" name="size" value="s">
+                        <label for="S">S</label>
+                        <input type="radio" id="M" name="size" value="m">
+                        <label for="M">M</label>
+                        <input type="radio" id="L" name="size" value="l">
+                        <label for="L">L</label>
+                        <input type="radio" id="Xl" name="size" value="xl">
+                        <label for="Xl">XL</label>
+                    </div>
+                    <div class="form-card">
+                        <label for="color" >Color</label>
+                        <input type="radio" id="black" name="color" value="black">
+                        <label for="black">Black</label>
+                        <input type="radio" id="white" name="color" value="white">
+                        <label for="white">White</label>
+                        <input type="radio" id="blue" name="color" value="blue">
+                        <label for="blue">Blue</label>
+                    </div>
+                    <div class="form-card">
+                        <button>BUY NOW</button>
+                        <button>ADD TO CART</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
